@@ -105,6 +105,14 @@ let
      zip
      unzip
      rar
+     kdePackages.plasma-pa
+     kdePackages.bluedevil
+     kdePackages.yakuake
+     kdePackages.ark
+     kdePackages.kcmutils
+     kdePackages.flatpak-kcm
+     kdePackages.sddm-kcm
+     kdePackages.ksystemlog
    ];
 
    programs.steam = {
@@ -119,7 +127,6 @@ let
    programs.kdeconnect.enable = true;
    programs.git.enable = true;
 
-  servives.xserver.enable = true;
   services.desktopManager.plasma6.enable = true;
   services.desktopManager.plasma6.enableQt5Integration = true;
   services.displayManager.defaultSession = "plasma";
@@ -128,17 +135,6 @@ let
     enable = true;
     wayland.enable = true;
   };
-
-  environment.systemPackages = with pkgs.kdePackages; [
-    plasma-pa
-    bluedevil
-    yakuake
-    ark
-    kcmutils
-    flatpak-kcm
-    sddm-kcm
-    ksystemlog
-  ];
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
     elisa
