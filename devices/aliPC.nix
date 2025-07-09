@@ -44,7 +44,6 @@
 
   };
 
-
   # Networking
   networking.hostName = "aliPC";
   networking.networkmanager.enable = true;

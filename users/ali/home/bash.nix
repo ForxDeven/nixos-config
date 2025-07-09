@@ -33,6 +33,7 @@
         neo = "neofetch";
         bat = "acpi -V";
         errors = "journalctl -p 3 -b";
+        fntog = "sudo /etc/nixos/nixos-config/users/ali/home/fn-toggle"
       };
 
 
